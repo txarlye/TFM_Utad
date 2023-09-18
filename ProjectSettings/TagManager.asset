@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Projectile
+  - Flame
+  - Water
+  - Destroyer
+  - Ring
+  - Objective
+<<<<<<< HEAD
+  - FxTemporaire
+  - LineRender
+  - PuedeRecibirDisparos
+=======
+>>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Minimap
+  - Minimap_Icons
+  - casco
+  - terreno
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Pushable
+  - Character Collider
+  - Character Controller
+  - Teleport
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
