@@ -12,15 +12,11 @@ public class AirplaneControls : Singleton<AirplaneControls>
     
     public float accelerationSpeed = 10f; // Aumentado a 10000
     public float decelerationSpeed = 1f;
-<<<<<<< HEAD
-    public float maxSpeed = 700f;
-=======
     
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
     public bool invertPitch = false;
     public bool invertYaw = false;
     public float accelerationCoefficient = 100f; // Por defecto es 100, y puedes cambiarlo hasta 10000 en el inspector
-
+    public float maxSpeed = 700f;
     [Header("Control Coefficients")]
     [Range(0, 1)]
     public float pitchCoefficient = 1f;
@@ -77,9 +73,9 @@ public class AirplaneControls : Singleton<AirplaneControls>
             {
                 AudioManager.Instance.StopAll();
                 AudioManager.Instance.Play("DespegueF5");
-<<<<<<< HEAD
-            }
-
+            } 
+            isVRControl = false;
+            currentVelocity += transform.forward * accelerationSpeed * Time.deltaTime;
             if (rb.velocity.magnitude < maxSpeed)
             {
                 isVRControl = false;
@@ -90,11 +86,6 @@ public class AirplaneControls : Singleton<AirplaneControls>
                 currentVelocity = rb.velocity;
             }
             
-=======
-            } 
-            isVRControl = false;
-            currentVelocity += transform.forward * accelerationSpeed * Time.deltaTime;
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
         }
         else if (decelerating)
         {

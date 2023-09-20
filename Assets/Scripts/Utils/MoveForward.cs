@@ -1,8 +1,8 @@
 using UnityEngine;
-<<<<<<< HEAD
+ 
 using System.Collections;
-=======
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
+using System.Security.Cryptography.X509Certificates;
+
 
 public class MoveForward : MonoBehaviour
 {
@@ -10,13 +10,10 @@ public class MoveForward : MonoBehaviour
     public Vector3 directionMultiplier = new Vector3(1, 0, 0); // Puedes ajustar esto en el Inspector
     public float speedMultiplier = 1.0f;
     public float minimumSpeed = 1.0f; 
-    public bool isBullet = false;
-<<<<<<< HEAD
+    public bool isBullet = false; 
     public float distanceThreshold = 50.0f; 
     public GameObject bulletImpactVFX;  
-    public GameObject missileImpactVFX; 
-=======
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
+    public GameObject missileImpactVFX;  
     public void ActivateBullet(Vector3 position, Quaternion rotation, Vector3 initialVelocity, bool isBullet)
     {
         transform.position = position;
@@ -27,12 +24,8 @@ public class MoveForward : MonoBehaviour
             this.velocity = transform.forward * minimumSpeed;
         }
         else
-        {
-<<<<<<< HEAD
-            this.velocity = Vector3.Scale(initialVelocity, directionMultiplier); 
-=======
-            this.velocity = Vector3.Scale(initialVelocity, directionMultiplier);
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
+        { 
+            this.velocity = Vector3.Scale(initialVelocity, directionMultiplier);   
         }
         
     }
@@ -48,15 +41,13 @@ public class MoveForward : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trigger detectado con: " + other.gameObject.name + ", tag: " + other.gameObject.tag);
-<<<<<<< HEAD
+        Debug.Log("Trigger detectado con: " + other.gameObject.name + ", tag: " + other.gameObject.tag); 
         playAudio(other);
         if (other.gameObject.tag == "Objective")  
         {
             showVFX_Humo(transform,"WFX_Explosion");
             // Desactivar el objetivo y la bala
-            other.gameObject.SetActive(false); 
-=======
+            other.gameObject.SetActive(false);  
         
         if (other.gameObject.tag == "Objective") // Asegúrate de que tus objetivos tengan este tag
         {
@@ -76,9 +67,7 @@ public class MoveForward : MonoBehaviour
             other.gameObject.SetActive(false);
             this.gameObject.SetActive(false);
 
-            // Llamar al método para manejar la destrucción del objetivo
-            //other.gameObject.GetComponent<ObjectiveManager>().ObjectiveDestroyed(); 
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
+            // Llamar al método para manejar la destrucción del objetivo 
             if (ObjectiveManager.Instance != null)
             {
                 ObjectiveManager.Instance.ObjectiveDestroyed();
@@ -86,8 +75,7 @@ public class MoveForward : MonoBehaviour
             else
             {
                 Debug.LogError("ObjectiveManager.Instance es null");
-            }
-<<<<<<< HEAD
+            } 
             
             StartCoroutine(DespawnAfterSeconds(3f));
         }
@@ -113,7 +101,7 @@ public class MoveForward : MonoBehaviour
             meshRenderer.enabled = true;
         }
     }
-    private void playAudio(Collider other)
+    void playAudio(Collider other)
     {
         // Calcular la distancia al objeto con el que se colisionó
         float distance = Vector3.Distance(transform.position, other.transform.position);
@@ -134,7 +122,7 @@ public class MoveForward : MonoBehaviour
             }
         }
     }
-    private void showVFX_Humo(Transform proyectil,string VFX)
+    void showVFX_Humo(Transform proyectil,string VFX)
     {
         if (!isBullet)
         {
@@ -154,20 +142,14 @@ public class MoveForward : MonoBehaviour
         {
             Transform explosion = proyectil.transform.Find("WFX_Explosion");
             Instantiate(bulletImpactVFX, transform.position, Quaternion.identity);
-        }  
-=======
+        }   
             // Devolver la bala al pool (esto se haría en tu GameManager o en un PoolManager)
             PoolManager.Instance.Despawn(this.gameObject);
-        }
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
+        }  
     }
 }
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
+ 
    
 
 

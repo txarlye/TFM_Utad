@@ -3,19 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Projectile
-  - Flame
-  - Water
-  - Destroyer
-  - Ring
-  - Objective
-<<<<<<< HEAD
-  - FxTemporaire
-  - LineRender
-  - PuedeRecibirDisparos
-=======
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -23,10 +11,6 @@ TagManager:
   - 
   - Water
   - UI
-  - Minimap
-  - Minimap_Icons
-  - casco
-  - terreno
   - 
   - 
   - 
@@ -45,10 +29,14 @@ TagManager:
   - 
   - 
   - 
-  - Pushable
-  - Character Collider
-  - Character Controller
-  - Teleport
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0

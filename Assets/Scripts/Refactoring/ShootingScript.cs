@@ -1,11 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< HEAD
-using UnityEngine.XR;  
-=======
 using UnityEngine.XR;
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
 public class ShootingScript : MonoBehaviour
 {
     public GameObject bulletPrefab;
@@ -24,10 +20,7 @@ public class ShootingScript : MonoBehaviour
     private Material originalMaterial;
     private Material pressedMaterial;
     private bool canDoRafaga = true;
-<<<<<<< HEAD
-    
-=======
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
+ 
     void Start()
     {
         airplaneRigidbody = GetComponentInParent<Rigidbody>();
@@ -37,11 +30,8 @@ public class ShootingScript : MonoBehaviour
             originalMaterial = renderer.material;
 
             pressedMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
-<<<<<<< HEAD
             pressedMaterial.color = Color.green; 
-=======
             pressedMaterial.color = Color.green;
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
         }
     }
 
@@ -51,7 +41,6 @@ public class ShootingScript : MonoBehaviour
         bool fireMissileKeyboard = Input.GetKeyDown(KeyCode.B);
         bool fireBulletOculus = false;
         bool fireMissileOculus = false;
-<<<<<<< HEAD
         
         // Obtener el estado del gatillo del controlador derecho
         InputDevice deviceRight = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
@@ -73,15 +62,15 @@ public class ShootingScript : MonoBehaviour
         }
         
         
-=======
+
         // Obtener el estado del gatillo del controlador izquierdo
-        InputDevice deviceLeft = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
+        deviceLeft = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
         deviceLeft.TryGetFeatureValue(CommonUsages.triggerButton, out fireBulletOculus);
 
         // Obtener el estado del gatillo del controlador derecho
-        InputDevice deviceRight = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
+        deviceRight = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
         deviceRight.TryGetFeatureValue(CommonUsages.triggerButton, out fireMissileOculus);
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
+
         
         //Debug.Log("ShootingScript:Velocidad del avión: " + airplaneRigidbody.velocity);
         if ((fireBulletKeyboard || fireBulletOculus) && canDoRafaga)
@@ -154,12 +143,12 @@ public class ShootingScript : MonoBehaviour
     }
     IEnumerator AccelerateMissile(MoveForward missileScript, Transform missileTransform, float delay)
     {
-<<<<<<< HEAD
+
         yield return new WaitForSeconds(delay); 
         
         missileScript.SetSpeedMultiplier(missileAcceleration);
         showVFX_Humo(missileTransform,"SmokeFXHumo"); 
-=======
+
         yield return new WaitForSeconds(delay);
         
         Transform humo = missileTransform.Find("SmokeFXHumo");
@@ -174,7 +163,7 @@ public class ShootingScript : MonoBehaviour
         
         
         missileScript.SetSpeedMultiplier(missileAcceleration);
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
+
     }
 
     IEnumerator RestoreOriginalMaterial(GameObject button, float delay)
@@ -186,7 +175,7 @@ public class ShootingScript : MonoBehaviour
             renderer.material = originalMaterial;
         }
     }
-<<<<<<< HEAD
+
 
     private void showVFX_Humo(Transform proyectil,string VFX)
     {
@@ -202,6 +191,5 @@ public class ShootingScript : MonoBehaviour
             Debug.Log("No se encontró" + VFX );
         }
     }
-=======
->>>>>>> 49fb56f245c6279d422c1c8dff2e1fac72fd2a70
+
 }
