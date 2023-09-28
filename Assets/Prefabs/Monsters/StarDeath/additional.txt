@@ -1,4 +1,0 @@
-In the original 3ds file that was converted from Animation Master, it wouldn't render without messing with the normals setting. Either wasy I couldn't get it to render properly. So I remade the upper sphere, and edited the vertex level to match the seams. Laser ring assembly has been seperated and made into seperate linked objects to ease remapping. Trench floor is a seperate object also. Maps are applied and should work with 3DSMAX4.2 now. Exported to 3ds, but may or may not keep maps intact.
-
-Aaron Gaffney 
-acg2112@pacbell.net
