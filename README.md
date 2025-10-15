@@ -10,7 +10,7 @@
 
 ## 📋 Descripción del Proyecto
 
-Este proyecto forma parte del **Trabajo de Fin de Máster (TFM)** de la Universidad de Valladolid (UTAD). Se trata de una **aplicación formativa para pilotos basada en realidad virtual** que simula el vuelo de un avión F5 en un entorno inmersivo.
+Este proyecto forma parte del **Trabajo de Fin de Máster (TFM)** de la Universidad UTAD. Se trata de una **aplicación formativa para pilotos basada en realidad virtual** que simula el vuelo de un avión F5 en un entorno inmersivo.
 
 ### 🎯 Objetivos
 - Desarrollar una herramienta de formación para pilotos utilizando tecnologías de realidad virtual
