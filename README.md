@@ -470,8 +470,9 @@ Este proyecto está bajo la **Unity Companion License** para proyectos dependien
 ## 👥 Créditos
 
 - **Desarrollador**: Txarlye (cítame o invítame a un café)
+- **cafe**: bc1qh3z7yd2gv6m64dkwnnukn40aafhhmyht72aklf
 - **Universidad**: U-TAD
-- **Tutor**: [Nombre del Tutor]
+- **Tutor**: David Pinto
 - **Año**: 2023
 
 ### Recursos Externos
