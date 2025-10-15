@@ -8,8 +8,6 @@
 
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RnSyyRkkCCA?si=t_9b74KLw-NvQ4gp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 ## 📋 Descripción del Proyecto
 
 Este proyecto forma parte del **Trabajo de Fin de Máster (TFM)** de la Universidad de Valladolid (UTAD). Se trata de una **aplicación formativa para pilotos basada en realidad virtual** que simula el vuelo de un avión F5 en un entorno inmersivo.
