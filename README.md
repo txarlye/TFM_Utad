@@ -2,7 +2,11 @@
 
 [![Video Demo](.img/preview.png)](https://www.youtube.com/watch?v=RnSyyRkkCCA)
 
+<div align="center">
+
 *<sub>Haga clic en la imagen para abrir el video en YouTube</sub>*
+
+</div>
 
 ## 📋 Descripción del Proyecto
 
