@@ -1,6 +1,8 @@
 # Flight Simulator VR - Simulador de vuelo basado en realidad virtual
 
-[![Video Demo](https://img.youtube.com/vi/RnSyyRkkCCA/maxresdefault.jpg)](https://www.youtube.com/watch?v=RnSyyRkkCCA&t=8s)
+[![Video Demo](https://img.youtube.com/vi/RnSyyRkkCCA/maxresdefault.jpg)](https://www.youtube.com/watch?v=RnSyyRkkCCA)
+
+*<sub>Haga clic en la imagen para abrir el video en YouTube</sub>*
 
 ## 📋 Descripción del Proyecto
 
