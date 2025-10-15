@@ -95,13 +95,7 @@ Este proyecto forma parte del **Trabajo de Fin de Máster (TFM)** de la Universi
 │   │   │   ├── 📄 Singleton.cs
 │   │   │   ├── 📄 MoveForward.cs
 │   │   │   └── 📄 DespawnAfterTimeElapsed.cs
-│   │   └── 📁 Old/                         # Scripts obsoletos
-│   │       ├── 📄 Borrar-BaseAirplane_Input.cs
-│   │       ├── 📄 Borrar-MissionControl.cs
-│   │       ├── 📄 borrar-ModeManager.cs
-│   │       ├── 📄 Borrar-StartRing.cs
-│   │       ├── 📄 Borrar-testVelocidad.cs
-│   │       └── 📄 BorrarAirplane.cs
+│   │   
 │   ├── 📁 Scenes/                          # Escenas del juego
 │   │   ├── 🎬 1 Start Scene.unity         # Escena de inicio/lobby
 │   │   ├── 🎬 2 Game Scene con mapas copiaSeg.unity # Escena de vuelo
