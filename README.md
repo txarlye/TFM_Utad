@@ -6,7 +6,7 @@
 
 *<sub>Haga clic en la imagen para abrir el video en YouTube</sub>*
 
-</div>
+</div> 
 
 ## 📋 Descripción del Proyecto
 
@@ -304,6 +304,22 @@ Controla los estados principales del juego:
   - `WinGame()` - Finaliza con victoria
   - `LoseGame()` - Finaliza con derrota
 
+<div align="center">
+
+![Diagrama UML del GameManager](.img/GameManager.png)
+
+*Diagrama UML completo del GameManager*
+
+</div>
+
+<div align="center">
+
+![GameManager del Avión](.img/gameManager_avion.png)
+
+*Configuración específica del GameManager para el sistema de avión*
+
+</div>
+
 ### MissionManager
 Gestiona los tipos de misión disponibles:
 - **Tipos de misión**: `DestroyTargets`, `PassThroughRings`, `TimedRace`
@@ -334,6 +350,14 @@ Actualiza todos los elementos de interfaz en tiempo real:
 - **AirplaneControls**: Input de controles VR
 - **AirplaneCharacteristics**: Parámetros del avión
 - **Instrumentos**: Altímetro, velocímetro, tacómetro, combustible, etc.
+
+<div align="center">
+
+![Interfaz de Instrumentos de Vuelo](.img/UI giroscopio..png)
+
+*Interfaz de instrumentos de vuelo - Giroscopio y otros instrumentos de cabina*
+
+</div>
 
 ### Diagrama UML
 Ver `.img/GameManager.png` para las relaciones completas entre clases.
@@ -413,6 +437,22 @@ Los datos se guardan automáticamente al cerrar la aplicación.
 - Modelado de la cabina del F5 en **3D Studio Max**
 - Texturizado con **Photoshop**
 - Importación a Unity como prefabs
+
+<div align="center">
+
+![Proceso de Modelado 3D](.img/modelado.png)
+
+*Proceso de modelado de la cabina del F5 en 3D Studio Max*
+
+</div>
+
+<div align="center">
+
+![Modelado y Detalle en Unity](.img/modelado2.png)
+
+*Refinamiento y detalle del modelado en Unity*
+
+</div>
 
 ### 2. Programación
 - Implementación de la física del avión
