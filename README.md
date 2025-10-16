@@ -478,7 +478,9 @@ Este proyecto está bajo la **Unity Companion License** para proyectos dependien
 ### Recursos Externos
 - **Modelos 3D**: Recursos gratuitos de Unity Asset Store
 - **Audio**: Kenney Audio Pack
+- **Transición entre escenas**: Patreon
 - **Texturas**: Texturas personalizadas y de dominio público
+- Seguro hay alguna más, disculpas si tras 2 años ya no me acuerdo !
 
 ## 📞 Contacto
 
